@@ -193,7 +193,12 @@ Switch-GShard-MoE-Comparison/
 ├── Switch_GShard_MOE.py
 ├── README.md
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+│
+└── results/
+    └── summary/
+        ├── final_summary_20260407_154812.json
+        └── final_summary_20260407_154812.txt
 ```
 
 ## Technologies Used
