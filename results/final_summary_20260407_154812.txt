@@ -1,0 +1,21 @@
+FINAL COMPARISON SUMMARY
+============================================================
+dense_final: {'epoch': 5, 'train_loss': 0.2024356997871399, 'train_acc': 0.9354766666666666, 'snli_acc': 0.8558219874009347, 'mnli_matched_acc': 0.7722873153336729, 'mnli_mismatched_acc': 0.7743083807973963, 'anli_acc': 0.450625, 'epoch_time': 1898.3354170322418}
+switch_final: {'epoch': 4, 'train_loss': 0.30026021670182546, 'train_acc': 0.91497, 'snli_acc': 0.8576508839666734, 'mnli_matched_acc': 0.7694345389709628, 'mnli_mismatched_acc': 0.7671887713588283, 'anli_acc': 0.438125, 'expert_usage': [0.2500807046890259, 0.2501737177371979, 0.24941056966781616, 0.2503350079059601], 'epoch_time': 2575.2327122688293}
+gshard_final: {'epoch': 5, 'train_loss': 0.2514490157984197, 'train_acc': 0.9370933333333333, 'snli_acc': 0.8598862019914651, 'mnli_matched_acc': 0.7779928680590932, 'mnli_mismatched_acc': 0.7792921074043938, 'anli_acc': 0.4415625, 'expert_usage': [0.25030505657196045, 0.24954135715961456, 0.2506134510040283, 0.2495408058166504], 'epoch_time': 10937.963262081146}
+dense_total_params: 75809283
+dense_active_params: 75809283
+switch_total_params: 104144647
+switch_active_params: 75812359
+gshard_total_params: 104144647
+gshard_active_params: 85256455
+dense_latency_per_batch: 0.00633862236035375
+dense_latency_per_sample: 0.00039652716548723403
+dense_throughput: 2521.8953126988076
+switch_latency_per_batch: 0.02383990163523522
+switch_latency_per_sample: 0.001491360122672891
+switch_throughput: 670.5288580519034
+gshard_latency_per_batch: 0.05236852052545703
+gshard_latency_per_sample: 0.003276033785290944
+gshard_throughput: 305.24715724541596
+note_training_fairness: Dense and Switch trained with batch size 16. GShard trained with micro-batch 4 + grad accumulation 4 for memory safety. Hence training time is not strictly apples-to-apples, but inference benchmarking is fair.
