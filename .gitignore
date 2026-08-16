@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Generated experiment outputs
+SG_outputs_safe_*/
+
+# Model checkpoints
+*.pt
+*.pth
+*.bin
+
+# Logs
+*.log
